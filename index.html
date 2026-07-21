@@ -309,7 +309,7 @@
         return localStorage.getItem('chaidude_printer_phone') || '+91 9999999999';
       });
       const [printerGreeting, setPrinterGreeting] = useState(() => {
-        return localStorage.getItem('chaidude_printer_greeting') || 'HARIOM! Visit Again!';
+        return localStorage.getItem('chaidude_printer_greeting') || 'Thank You!';
       });
 
       const [completedOrderForPrint, setCompletedOrderForPrint] = useState(null);
@@ -2191,7 +2191,7 @@
                             value={printerGreeting}
                             onChange={(e) => setPrinterGreeting(e.target.value)}
                             className="w-full text-xs p-2.5 rounded-xl border border-stone-300 focus:outline-none"
-                            placeholder="HARIOM! Visit Again!"
+                            placeholder="Thank You!"
                           />
                         </div>
 
